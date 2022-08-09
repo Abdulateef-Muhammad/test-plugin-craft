@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: markdown
+name: Markdown
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  ad753b7d-dadd-4f02-ba5d-16b340c3212d: # Test Plugin
+    enabledByDefault: false
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

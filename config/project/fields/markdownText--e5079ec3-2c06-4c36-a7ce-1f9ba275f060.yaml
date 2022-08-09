@@ -1,0 +1,19 @@
+columnSuffix: opklsiwu
+contentColumnType: text
+fieldGroup: 5f0f9311-6fa4-48d7-b26d-965cf776a4fe # Common
+handle: markdownText
+instructions: null
+name: 'Markdown Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

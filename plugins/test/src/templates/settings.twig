@@ -1,0 +1,8 @@
+{% import "_includes/forms.twig" as forms %}
+
+{{ forms.lightSwitch({
+    name: 'testEnabled',
+    label: 'Test Enabled',
+    first: true,
+    value: settings.testEnabled
+}) }}

@@ -1,0 +1,33 @@
+dateModified: 1660049377
+email:
+  fromEmail: abdulateef@onegr.com
+  fromName: 'Test Plugin'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    5f0f9311-6fa4-48d7-b26d-965cf776a4fe: Common # Common
+    0075aaf2-3263-4b59-af36-5968557cbad7: 'Public Schema' # Public Schema
+    ad753b7d-dadd-4f02-ba5d-16b340c3212d: 'Test Plugin' # Test Plugin
+    bbc39de6-5956-4cae-87ac-b7f8ed272c1c: Markdown # Markdown
+    dd6328b7-9e48-4419-9896-401472b5ed89: 'Test Plugin' # Test Plugin
+    e5079ec3-2c06-4c36-a7ce-1f9ba275f060: 'Markdown Text' # Markdown Text
+    eababe8b-230b-4a67-9dbe-bc75c22b5e9c: Markdown # Markdown
+plugins:
+  test:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      testEnabled: '1'
+system:
+  edition: pro
+  live: true
+  name: 'Test Plugin'
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

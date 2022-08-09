@@ -1,0 +1,41 @@
+{
+    "name": "onegraphics/test",
+    "description": "some description",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "test"
+    ],
+    "support": {
+        "docs": "https://github.com/Abdulateef-Muhammad/test/blob/master/README.md",
+        "issues": "https://github.com/Abdulateef-Muhammad/test/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdulateef",
+            "homepage": "github.com/Abdulateef-Muhammad"
+        }
+    ],
+    "require": {
+        "craftcms/cms": ">=3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "onegraphics\\test\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Test",
+        "handle": "test",
+        "developer": "Abdulateef",
+        "developerUrl": "github.com/Abdulateef-Muhammad",
+        "documentationUrl": "https://github.com/Abdulateef-Muhammad/test/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/Abdulateef-Muhammad/test/master/CHANGELOG.md",
+        "class": "onegraphics\\test\\Test"
+    }
+}

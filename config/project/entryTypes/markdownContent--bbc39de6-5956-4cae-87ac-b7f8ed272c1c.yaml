@@ -1,0 +1,55 @@
+fieldLayouts:
+  dc841741-d7e5-4831-ba50-e1cf5c291944:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 16b0ea51-81b6-47af-8d5c-4a3988d46101
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e5079ec3-2c06-4c36-a7ce-1f9ba275f060 # Markdown Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c76e5564-1ab7-4898-925a-59744b14981b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3d29fa92-d83a-4097-af98-5ae8764ef954
+        userCondition: null
+handle: markdownContent
+hasTitleField: true
+name: Markdown
+section: eababe8b-230b-4a67-9dbe-bc75c22b5e9c # Markdown
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
