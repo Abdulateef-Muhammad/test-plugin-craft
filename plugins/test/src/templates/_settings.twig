@@ -1,0 +1,19 @@
+{% import "_includes/forms.twig" as forms %}
+{% set tabs = {
+    content: {
+        label: 'Content',
+        url: '#content',
+    },
+    settings: {
+        label: 'Settings',
+        url: '#settings',
+    },
+} %}
+
+{{ forms.lightSwitch({
+    name: 'testEnabled',
+    label: 'Test Enabled',
+    first: true,
+    on: settings.testEnabled
+}) }}
+

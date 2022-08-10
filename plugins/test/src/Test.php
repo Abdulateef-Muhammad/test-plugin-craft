@@ -17,6 +17,9 @@ use craft\base\Plugin;
 use craft\services\Plugins;
 use craft\events\PluginEvent;
 
+use craft\web\twig\variables\CraftVariable;
+use onegraphics\test\models\Settings;
+use onegraphics\test\services\TestService;
 use yii\base\Event;
 
 /**
@@ -87,8 +90,12 @@ class Test extends Plugin
      */
     public function init()
     {
+
         parent::init();
         self::$plugin = $this;
+        $this->setComponents([
+            'testServices' => \onegraphics\test\services\TestService::class,
+        ]);
 
         // Do something after we're installed
         Event::on(
@@ -98,6 +105,16 @@ class Test extends Plugin
                 if ($event->plugin === $this) {
                     // We were just installed
                 }
+            }
+        );
+
+        Event::on(
+            CraftVariable::class,
+            CraftVariable::EVENT_INIT,
+            function (Event $e) {
+                $variable = $e->sender;
+                // register a service
+                $variable->set('testService', TestService::class);
             }
         );
 
@@ -118,15 +135,15 @@ class Test extends Plugin
  * [] Show the debug toolbar on the front end & [] Show the debug toolbar on the Control Panel
  *
  * http://www.yiiframework.com/doc-2.0/guide-runtime-logging.html
- */
-        Craft::info(
-            Craft::t(
-                'test',
-                '{name} plugin loaded',
-                ['name' => $this->name]
-            ),
-            __METHOD__
-        );
+// */
+//        Craft::info(
+//            Craft::t(
+//                'test',
+//                '{name} plugin loaded',
+//                ['name' => $this->name]
+//            ),
+//            __METHOD__
+//        );
     }
 
     // Protected Methods
@@ -139,7 +156,7 @@ class Test extends Plugin
     protected function settingsHtml(): ?string
     {
         return \Craft::$app->getView()->renderTemplate(
-          'test/settings',
+          'test/_settings',
             ['settings' => $this->getSettings()]
         );
     }

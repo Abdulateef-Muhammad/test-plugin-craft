@@ -1,4 +1,4 @@
-dateModified: 1660049377
+dateModified: 1660122929
 email:
   fromEmail: abdulateef@onegr.com
   fromName: 'Test Plugin'
@@ -13,6 +13,13 @@ meta:
     e5079ec3-2c06-4c36-a7ce-1f9ba275f060: 'Markdown Text' # Markdown Text
     eababe8b-230b-4a67-9dbe-bc75c22b5e9c: Markdown # Markdown
 plugins:
+  entry-count:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+    settings:
+      ignoreIpAddresses: ''
+      ignoreLoggedInUsers: false
   test:
     edition: standard
     enabled: true
